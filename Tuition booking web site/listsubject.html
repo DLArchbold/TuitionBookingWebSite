@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>King Tuition- Trusted tuition service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/jcarousel.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Theme skin -->
+    <link href="skins/default.css" rel="stylesheet" />
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="ico/favicon.png" />
+
+    <!-- =======================================================
+    Theme Name: Flattern
+    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+
+<body>
+    <div id="wrapper">
+        <!-- toggle top area -->
+        <div class="hidden-top">
+            <div class="hidden-top-inner container">
+                <div class="row">
+                    <div class="span12">
+                        <ul>
+                            <li><strong>We are available for any custom works this month</strong></li>
+                            <li>Main office: Springville center X264, Park Ave S.01</li>
+                            <li>Call us <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end toggle top area -->
+        <!-- start header -->
+        <header>
+            <div class="container ">
+                <!-- hidden top area toggle link -->
+                <div id="header-hidden-link">
+                    <a href="#" class="toggle-link" title="Click me you'll get a surprise"
+                        data-target=".hidden-top"><i></i>Open</a>
+                </div>
+                <!-- end toggle link -->
+                <div class="row nomargin">
+                    <div class="span12">
+                        <div class="headnav">
+                            <ul>
+                                <li><a href="#mySignup" id="Signup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
+                                <li><a href="#mySignin" id="Signin" data-toggle="modal">Sign in</a></li>
+                                <li><a href="profile.html" id="Profile" data-toggle="modal">Profile</a></li>
+                                <li><a href="#userEmail" id="Logout" data-toggle="modal">Log out</a></li>
+                            </ul>
+                        </div>
+                        <!-- Signup Modal -->
+                        <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog"
+                            aria-labelledby="mySignupModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="alert alert-danger" role="alert" id="errorSignUp"></div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupName">Name</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputSignupName" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupEmail">Email</label>
+                                        <div class="controls">
+                                            <input type="email" id="inputSignupEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupPassword">Password</label>
+                                        <div class="controls">
+                                            <input type="password" id="inputSignupPassword" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
+                                        <div class="controls">
+                                            <input type="password" id="inputSignupPassword2"
+                                                placeholder="Confirm password">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupContactNumber">Contact
+                                            number</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputSignupContactNumber"
+                                                placeholder="Contact number">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupAddress">Address</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputSignupAddress" placeholder="Address">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label">User type</label>
+                                        <div class="controls">
+                                            <select id="usertype">
+                                                <option value="student">Student</option>
+                                                <option value="teacher">Teacher</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn" id="signup-btn">Sign up</button>
+                                        </div>
+                                        <p class="aligncenter margintop20">
+                                            Already have an account? <a href="#mySignin" data-dismiss="modal"
+                                                aria-hidden="true" data-toggle="modal">Sign in</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end signup modal -->
+                        <!-- Sign in Modal -->
+                        <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog"
+                            aria-labelledby="mySigninModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="alert alert-danger" role="alert" id="errorSignIn"></div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSigninEmail">Email</label>
+                                        <div class="controls">
+                                            <input type="email" id="inputSigninEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSigninPassword">Password</label>
+                                        <div class="controls">
+                                            <input type="password" id="inputSigninPassword" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn" id="signin-btn">Sign in</button>
+                                        </div>
+                                        <p class="aligncenter margintop20">
+                                            Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true"
+                                                data-toggle="modal">Reset</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end signin modal -->
+                        <!-- Reset Modal -->
+                        <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog"
+                            aria-labelledby="myResetModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="alert alert-danger" role="alert" id="errorReset"></div>
+                                    <div class="alert alert-info" role="alert info" id="infoReset"></div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputResetEmail">Email</label>
+                                        <div class="controls">
+                                            <input type="email" id="inputResetEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn" id="reset-btn">Reset password</button>
+                                        </div>
+                                        <p class="aligncenter margintop20">
+                                            We will send instructions on how to reset your password to your inbox
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end reset modal -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="navbar navbar-static-top">
+                            <div class="navigation">
+                                <nav>
+                                    <ul class="nav topnav">
+
+                                        <li><a href="index.html">Home </a></li>
+
+                                        <li>
+                                            <a href="profile.html">Profile</a>
+                                        </li>
+
+                                        <li> <a href="addSubject.html">Add Subject</a></li>
+
+                                        <li><a href="deleteSubject.html">Delete subject</a></li>
+                                        <li>
+                                            <a href="contact.html">Contact </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- end navigation -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="solidline">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Subject List</h2>
+            </div>
+            <div id="subjecttables" class="row">
+                <div class="span12">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    No.
+                                </th>
+                                <th>
+                                    Subject Name
+                                </th>
+                                <th>
+                                    Level
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="listsubject">
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <div class="solidline">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <section id="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="aligncenter">
+                            <div id="twitter-wrapper">
+                                <div id="twitter">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Browse pages</h5>
+                            <ul class="link-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="addSubject.html">Add subject</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="span3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Get in touch with us</h5>
+                            <address>
+                                <strong>King Tuition, SDN BHD.</strong><br>
+                                20, Jalan Ipoh, 40150 Subang Jaya,<br>
+                                Selangor, Malaysia
+                            </address>
+                            <p>
+                                <i class="icon-phone"></i> (03) 100-8888 <br>
+                                <i class="icon-envelope-alt"></i> email@kingtuition.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="span6">
+                            <div class="copyright">
+                                <p>
+                                    <span>&copy; Flattern - All right reserved.</span>
+                                </p>
+                                <div class="credits">
+                                    <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+                  -->
+                                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <ul class="social-network">
+                                <li><a href="#" data-placement="bottom" title="Facebook"><i
+                                            class="icon-facebook icon-square"></i></a>
+                                </li>
+                                <li><a href="#" data-placement="bottom" title="Twitter"><i
+                                            class="icon-twitter icon-square"></i></a>
+                                </li>
+                                <li><a href="#" data-placement="bottom" title="Linkedin"><i
+                                            class="icon-linkedin icon-square"></i></a>
+                                </li>
+                                <li><a href="#" data-placement="bottom" title="Pinterest"><i
+                                            class="icon-pinterest icon-square"></i></a>
+                                </li>
+                                <li><a href="#" data-placement="bottom" title="Google plus"><i
+                                            class="icon-google-plus icon-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.fancybox-media.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/portfolio/jquery.quicksand.js"></script>
+    <script src="js/portfolio/setting.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <script src="js/jquery.slitslider.js"></script>
+    <script src="js/animate.js"></script>
+
+    <!-- Template Custom JavaScript File -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="AccountFirebase.js"></script>
+    <script src="js/signIn.js"></script>
+    <script src="js/livechat.js"></script>
+
+
+
+    <script>
+        $(function () {
+            var db = firebase.firestore();
+            var i = 1;
+            db.collection("subjects").get().then(function (querySnapshot) {
+                querySnapshot.forEach(function (doc) {
+                    var data = doc.data();
+                    $("#listsubject").append("<tr><td>" + i + "</td><td>" + data.SubName + "</td><td>" + data.Level + "</td></tr>");
+                    i++;
+                });
+            });
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>
